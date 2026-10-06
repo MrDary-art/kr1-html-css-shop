@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Подробное описание и характеристики настольной лампы Focus.">
+  <title>Настольная лампа Focus — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Настольная лампа Focus</span>
+    </nav>
+
+    <article class="product-detail">
+      <figure class="product-detail__media">
+        <img
+          class="product-detail__image"
+          src="images/focus-lamp.svg"
+          alt="Синяя настольная лампа Focus на рабочем столе"
+          width="800"
+          height="600"
+        >
+        <figcaption class="product-detail__caption">Учебная иллюстрация товара</figcaption>
+      </figure>
+
+      <div class="product-detail__content">
+        <p class="product-detail__category">Освещение для рабочего места</p>
+        <h1 class="product-detail__title">Настольная лампа Focus</h1>
+        <p class="product-detail__description">
+          Компактная светодиодная лампа с регулируемым наклоном. Подходит для
+          рабочего стола, чтения и вечерней учёбы.
+        </p>
+        <ul class="product-detail__features">
+          <li>три уровня яркости;</li>
+          <li>нейтральный свет без мерцания;</li>
+          <li>регулируемый угол наклона;</li>
+          <li>экономичное светодиодное освещение.</li>
+        </ul>
+        <p class="product-detail__price">1000 руб.</p>
+        <div class="product-detail__actions">
+          <a class="button button--primary" href="order.html">Оформить заявку</a>
+          <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="section" id="comparison">
+      <h2 class="section__title">Сравнение товаров</h2>
+      <div class="table-wrapper">
+        <table class="spec-table">
+          <caption class="spec-table__caption">Характеристики товаров для рабочего места</caption>
+          <thead class="spec-table__head">
+            <tr>
+              <th scope="col">Характеристика</th>
+              <th scope="col">Лампа Focus</th>
+              <th scope="col">Органайзер Desk</th>
+              <th scope="col">Подставка Stand</th>
+            </tr>
+          </thead>
+          <tbody class="spec-table__body">
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Освещение</td>
+              <td>Хранение</td>
+              <td>Аксессуары</td>
+            </tr>
+            <tr>
+              <th scope="row">Материал</th>
+              <td>Металл, пластик</td>
+              <td>Дерево</td>
+              <td>Алюминий</td>
+            </tr>
+            <tr>
+              <th scope="row">Гарантия</th>
+              <td>12 месяцев</td>
+              <td>6 месяцев</td>
+              <td>12 месяцев</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>1000 руб.</td>
+              <td>1500 руб.</td>
+              <td>2000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside class="aside-info">
+      <h2 class="aside-info__title">Доставка</h2>
+      <p class="aside-info__text">Учебный заказ подтверждается после заполнения формы заявки.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+</body>
+</html>
