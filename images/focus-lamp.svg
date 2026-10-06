@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Настольная лампа Focus</title>
+  <desc id="description">Синяя настольная лампа на светлом рабочем столе</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef5ff"/>
+      <stop offset="1" stop-color="#d9e9ff"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1474d4"/>
+      <stop offset="1" stop-color="#003f86"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="36" fill="url(#background)"/>
+  <circle cx="650" cy="120" r="64" fill="#ffffff" opacity="0.65"/>
+  <rect x="95" y="455" width="610" height="30" rx="15" fill="#b47b43"/>
+  <rect x="150" y="485" width="26" height="80" rx="8" fill="#8b5a2b"/>
+  <rect x="624" y="485" width="26" height="80" rx="8" fill="#8b5a2b"/>
+  <ellipse cx="382" cy="442" rx="120" ry="23" fill="#003f86" opacity="0.16"/>
+  <rect x="346" y="410" width="124" height="28" rx="14" fill="#003f86"/>
+  <rect x="394" y="255" width="25" height="170" rx="12" fill="#0057b8" transform="rotate(8 406 340)"/>
+  <circle cx="408" cy="267" r="22" fill="#003f86"/>
+  <path d="M290 255c14-82 174-88 210 0l-22 38H310z" fill="url(#shade)"/>
+  <path d="M323 293h142c-12 48-121 48-142 0z" fill="#fff4bd" opacity="0.95"/>
+  <rect x="180" y="385" width="105" height="68" rx="8" fill="#ffffff"/>
+  <rect x="195" y="400" width="75" height="8" rx="4" fill="#0057b8" opacity="0.55"/>
+  <rect x="195" y="417" width="58" height="8" rx="4" fill="#0057b8" opacity="0.3"/>
+  <rect x="195" y="434" width="67" height="8" rx="4" fill="#0057b8" opacity="0.3"/>
+  <circle cx="595" cy="421" r="31" fill="#168a2f"/>
+  <path d="M595 392c-28-34-59-13-45 17 8 17 27 22 45 12z" fill="#55b96a"/>
+  <path d="M597 393c25-38 62-20 51 12-6 18-27 25-51 17z" fill="#70c67f"/>
+</svg>

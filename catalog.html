@@ -22,6 +22,12 @@
             <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
           </li>
           <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
             <a class="site-nav__link" href="contacts.html">Контакты</a>
           </li>
           <li class="site-nav__item">
@@ -29,9 +35,6 @@
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
           </li>
         </ul>
       </nav>
@@ -47,9 +50,8 @@
     <section class="section">
       <h1 class="section__title">Каталог товаров</h1>
       <p>
-        На этой странице представлен учебный каталог товаров.
-        В дальнейшем здесь будут добавлены фильтры, сортировка и более
-        подробные карточки.
+        В каталоге представлены товары для организации удобного рабочего места.
+        Используйте статические фильтры для демонстрации структуры интерфейса.
       </p>
     </section>
 
@@ -91,24 +93,30 @@
 
         <div class="products-grid">
           <article class="product-card product-card--featured">
-            <h3 class="product-card__title">Товар 1</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
+            <span class="product-card__badge">Хит</span>
+            <p class="product-card__category">Освещение</p>
+            <h3 class="product-card__title">Настольная лампа Focus</h3>
+            <p class="product-card__description">Компактная лампа для комфортной учёбы и работы.</p>
             <p class="product-card__price">Цена: 1000 руб.</p>
-            <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
           </article>
 
-          <article class="product-card">
-            <h3 class="product-card__title">Товар 2</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
+          <article class="product-card product-card--new">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <p class="product-card__category">Хранение</p>
+            <h3 class="product-card__title">Органайзер Desk</h3>
+            <p class="product-card__description">Настольный органайзер для канцелярии и аксессуаров.</p>
             <p class="product-card__price">Цена: 1500 руб.</p>
-            <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+            <a class="button button--primary product-card__button" href="product.html#comparison">Подробнее</a>
           </article>
 
-          <article class="product-card">
-            <h3 class="product-card__title">Товар 3</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 2000 руб.</p>
-            <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+          <article class="product-card product-card--discount">
+            <span class="product-card__badge product-card__badge--discount">−20%</span>
+            <p class="product-card__category">Аксессуары</p>
+            <h3 class="product-card__title">Подставка Stand</h3>
+            <p class="product-card__description">Регулируемая подставка для ноутбука или планшета.</p>
+            <p class="product-card__price"><span class="product-card__old-price">2500 руб.</span> 2000 руб.</p>
+            <a class="button button--primary product-card__button" href="product.html#comparison">Подробнее</a>
           </article>
         </div>
       </section>

@@ -23,6 +23,12 @@
             <a class="site-nav__link" href="catalog.html">Каталог</a>
           </li>
           <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
             <a class="site-nav__link" href="contacts.html">Контакты</a>
           </li>
           <li class="site-nav__item">
@@ -30,9 +36,6 @@
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
           </li>
         </ul>
       </nav>
@@ -44,9 +47,8 @@
     <section class="hero">
       <h1>Учебный интернет-магазин</h1>
       <p>
-        Это стартовая страница учебного frontend-проекта. В дальнейшем
-        на её основе будет разработан многостраничный сайт интернет-магазина
-        или каталога услуг.
+        Многостраничный учебный проект с каталогом товаров для удобного
+        рабочего места, подробными характеристиками и формой заявки.
       </p>
       <a class="button button--primary" href="#popular">Перейти к товарам</a>
     </section>
@@ -57,7 +59,7 @@
         <li>понятная HTML-структура;</li>
         <li>семантические блоки страницы;</li>
         <li>подключение внешнего CSS-файла;</li>
-        <li>подготовка к разработке многостраничного сайта.</li>
+        <li>адаптивная раскладка для разных экранов.</li>
       </ul>
     </section>
 
@@ -66,28 +68,34 @@
 
       <div class="products-grid">
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
+          <span class="product-card__badge">Хит</span>
+          <p class="product-card__category">Освещение</p>
+          <h3 class="product-card__title">Настольная лампа Focus</h3>
+          <p class="product-card__description">Компактная лампа для комфортной учёбы и работы.</p>
           <p class="product-card__price">Цена: 1000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
+          <button class="button button--primary product-card__button" type="button" data-product="Настольная лампа Focus">
             Заказать
           </button>
         </article>
 
-        <article class="product-card">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
+        <article class="product-card product-card--new">
+          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <p class="product-card__category">Хранение</p>
+          <h3 class="product-card__title">Органайзер Desk</h3>
+          <p class="product-card__description">Настольный органайзер для канцелярии и аксессуаров.</p>
           <p class="product-card__price">Цена: 1500 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
+          <button class="button button--primary product-card__button" type="button" data-product="Органайзер Desk">
             Заказать
           </button>
         </article>
 
-        <article class="product-card">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
+        <article class="product-card product-card--discount">
+          <span class="product-card__badge product-card__badge--discount">−20%</span>
+          <p class="product-card__category">Аксессуары</p>
+          <h3 class="product-card__title">Подставка Stand</h3>
+          <p class="product-card__description">Регулируемая подставка для ноутбука или планшета.</p>
+          <p class="product-card__price"><span class="product-card__old-price">2500 руб.</span> 2000 руб.</p>
+          <button class="button button--primary product-card__button" type="button" data-product="Подставка Stand">
             Заказать
           </button>
         </article>
@@ -95,11 +103,10 @@
     </section>
 
     <aside class="aside-info">
-      <h2>Информация для студентов</h2>
-      <p>
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
+      <h2 class="aside-info__title">О проекте</h2>
+      <p class="aside-info__text">
+        Сайт объединяет каталог товаров для рабочего места, подробную карточку
+        товара, таблицу характеристик и два варианта оформления заявки.
       </p>
     </aside>
 
@@ -185,7 +192,7 @@
       </div>
 
       <div class="order-form__field order-form__field--checkbox">
-        <label class="order-form__label">
+        <label class="order-form__label" for="order-agreement">
           <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
           Я согласен на обработку данных
         </label>
