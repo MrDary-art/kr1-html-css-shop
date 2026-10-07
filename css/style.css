@@ -80,6 +80,10 @@ a:focus-visible {
   scroll-margin-top: 150px;
 }
 
+body:target {
+  outline: none;
+}
+
 .button {
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
@@ -202,6 +206,14 @@ a:focus-visible {
   padding: var(--space-xl) var(--space-lg);
   background-color: var(--color-surface-accent);
   border-radius: var(--radius-lg);
+}
+
+.hero__title {
+  margin-top: 0;
+}
+
+.hero__text {
+  max-width: 900px;
 }
 
 .section {
@@ -521,6 +533,31 @@ a:focus-visible {
   margin: var(--space-sm) 0;
 }
 
+.back-to-top {
+  position: fixed;
+  right: var(--space-lg);
+  bottom: var(--space-lg);
+  z-index: 90;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-dark);
+}
+
 /* ===============================
    5. Форма и модальное окно
    =============================== */
@@ -666,5 +703,12 @@ a:focus-visible {
 
   .site-footer {
     padding: var(--space-md);
+  }
+
+  .back-to-top {
+    right: var(--space-md);
+    bottom: var(--space-md);
+    width: 44px;
+    height: 44px;
   }
 }
