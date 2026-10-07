@@ -259,6 +259,27 @@ body:target {
   border-color: var(--color-danger);
 }
 
+.product-card__media {
+  margin: 0;
+}
+
+.product-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+}
+
+.product-card__caption {
+  margin-top: var(--space-xs);
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
 .product-card__badge {
   position: absolute;
   top: var(--space-sm);
