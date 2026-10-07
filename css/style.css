@@ -92,7 +92,6 @@ body:target {
   border-radius: var(--radius-sm);
   cursor: pointer;
   font: inherit;
-  transition: color 200ms ease, background-color 200ms ease, transform 120ms ease;
 }
 
 .button--primary {
@@ -114,10 +113,6 @@ body:target {
 .button--secondary:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
-}
-
-.button:active:not(:disabled):not(.button--disabled) {
-  transform: translateY(2px);
 }
 
 .button:focus-visible {
@@ -736,15 +731,5 @@ body:target {
     bottom: var(--space-md);
     width: 44px;
     height: 44px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .button {
-    transition: none;
   }
 }
