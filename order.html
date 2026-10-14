@@ -43,17 +43,18 @@
       <form class="order-form order-page__form" action="#" method="post">
         <div class="order-form__field">
           <label class="order-form__label" for="request-name">Имя *</label>
-          <input class="order-form__input" id="request-name" name="name" type="text" minlength="2" placeholder="Введите ваше имя" autocomplete="name" required>
+          <input class="order-form__input" id="request-name" name="name" type="text" minlength="2" maxlength="50" placeholder="Введите ваше имя" autocomplete="name" required>
         </div>
 
         <div class="order-form__field">
           <label class="order-form__label" for="request-email">E-mail *</label>
-          <input class="order-form__input" id="request-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+          <input class="order-form__input" id="request-email" name="email" type="email" maxlength="100" placeholder="example@mail.ru" autocomplete="email" required>
         </div>
 
         <div class="order-form__field">
           <label class="order-form__label" for="request-phone">Телефон *</label>
-          <input class="order-form__input" id="request-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" autocomplete="tel" required>
+          <input class="order-form__input" id="request-phone" name="phone" type="tel" inputmode="tel" maxlength="18" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" autocomplete="tel" aria-describedby="request-phone-hint" required>
+          <small class="order-form__hint" id="request-phone-hint">Формат: +7 (900) 000-00-00</small>
         </div>
 
         <div class="order-form__field">
@@ -78,7 +79,8 @@
 
         <div class="order-form__field">
           <label class="order-form__label" for="request-comment">Комментарий</label>
-          <textarea class="order-form__textarea" id="request-comment" name="comment" rows="5" placeholder="Дополнительная информация о заявке"></textarea>
+          <textarea class="order-form__textarea" id="request-comment" name="comment" rows="5" maxlength="500" placeholder="Дополнительная информация о заявке" aria-describedby="request-comment-hint"></textarea>
+          <small class="order-form__hint" id="request-comment-hint">Не более 500 символов.</small>
         </div>
 
         <div class="order-form__field order-form__field--checkbox">
