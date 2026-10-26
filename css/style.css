@@ -225,6 +225,41 @@ body:target {
   margin-top: 0;
 }
 
+.faq {
+  max-width: 760px;
+}
+
+.faq__list {
+  display: grid;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq__question {
+  padding: var(--space-md) 0;
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.faq__question:hover {
+  color: var(--color-primary);
+}
+
+.faq__question:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.faq__answer {
+  max-width: 68ch;
+  margin: 0;
+  padding: 0 0 var(--space-md);
+  color: var(--color-muted);
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
